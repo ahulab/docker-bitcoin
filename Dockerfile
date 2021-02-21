@@ -2,7 +2,7 @@ FROM debian:stretch as builder
 
 RUN apt-get update && apt-get install -y curl
 
-ENV BC_VERSION=0.18.1
+ENV BC_VERSION=0.18.3
 ENV BC_CHECKSUM="600d1db5e751fa85903e935a01a74f5cc57e1e7473c15fd3e17ed21e202cfe5a bitcoin-${BC_VERSION}-x86_64-linux-gnu.tar.gz"
 
 RUN curl -SLO "https://bitcoincore.org/bin/bitcoin-core-${BC_VERSION}/bitcoin-${BC_VERSION}-x86_64-linux-gnu.tar.gz" \
